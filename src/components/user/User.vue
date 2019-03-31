@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable prettier/prettier */
 <template>
   <div>
     <h1>The User Page</h1>
@@ -11,7 +12,7 @@
 export default {
   methods: {
     gotoHome() {
-      this.$router.push("/");
+      this.$router.push({ name: "home" });
     }
   }
 };
