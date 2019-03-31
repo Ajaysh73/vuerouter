@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   // Project deployment base
   // By default we assume your app will be deployed at the root of a domain,
@@ -6,12 +7,12 @@ module.exports = {
   // sub-path here. For example, if your app is deployed at
   // https://www.foobar.com/my-app/
   // then change this to '/my-app/'
-  baseUrl: '/vuerouter/',
+  // baseUrl: '/vuerouter/',
 
   // where to output built files
-  outputDir: 'dist'
+  outputDir: 'dist',
 
   // whether to use eslint-loader for lint on save.
   // valid values: true | false | 'error'
-  // publicPath: process.env.NODE_ENV === 'production' ? '/vuerouter/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/vuerouter/' : '/'
 };
